@@ -173,7 +173,6 @@ func (vm *VM) Execute(instructions []string) error {
 
 func NewVM() *VM {
 	return &VM{
-		Stack: make([]interface{}, 0),
 		Vars: map[string]interface{}{
 			"PI":   PI,
 			"E":    E,
